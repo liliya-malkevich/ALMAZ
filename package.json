@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-less": "^5.0.0",
+        "gulp-watch": "^5.0.1",
+        "less": "^4.2.0"
+    }
+}
