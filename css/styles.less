@@ -33,6 +33,12 @@ button {
     color: @white-color;
 }
 
+.text-orani-big {
+    font-size: 45px;
+    font-family: "Oranienbaum";
+    font-weight: 400;
+}
+
 .border-transparent {
     border-bottom: 1px solid transparent;
     padding-bottom: 3px;
@@ -58,17 +64,17 @@ button {
 
 @font-face {
     font-family: "PlayRegular";
-    src: url("../../assets/fonts/Play/Play-Regular.ttf") 
+    src: url("../../assets/fonts/Play/Play-Regular.ttf")
 }
 
 @font-face {
     font-family: "PlayBold";
-    src: url("../../assets/fonts/Play/Play-Bold.ttf") 
+    src: url("../../assets/fonts/Play/Play-Bold.ttf")
 }
 
 @font-face {
     font-family: "Oranienbaum";
-    src: url("../../assets/fonts/Oranienbaum/Oranienbaum-Regular.ttf") 
+    src: url("../../assets/fonts/Oranienbaum/Oranienbaum-Regular.ttf")
 }
 
 body {
@@ -168,7 +174,7 @@ main {
         position: absolute;
         background-color: #c3bfab;
         border-radius: 50%;
-        filter: blur(40px); 
+        filter: blur(40px);
     }
     .one {
         width: 122px;
@@ -197,7 +203,7 @@ main {
     .six {
         width: 187px;
         height: 204px;
-        bottom: -102px;
+        top: 651px;
         left: 143px;
     }
 .second {
@@ -226,7 +232,7 @@ main {
             button{
                 .main-button();
             }
-            
+
             .transp-button {
                 background: transparent;
                 margin-top: 66px;
@@ -289,21 +295,18 @@ main {
             }
             p {
                 max-width: 444px;
-                .text-green(); 
+                .text-green();
             }
         }
         .about-two {
             max-width: 485px;
             margin-bottom: 26px;
-            .text-green();   
+            .text-green();
         }
         .sign {
             display: flex;
             align-items: end;
             gap: 22px;
-            .sign-img{
-
-            }
             p{
                 font-family: "Oranienbaum";
                 font-size: 14px;
@@ -318,20 +321,18 @@ main {
         padding: 130px 0;
         .container {
             h2 {
-                font-size: 45px;
+                .text-orani-big();
                 letter-spacing: 1px;
                 color: @white-color;
-                font-family: "Oranienbaum";
                 text-align: center;
-                font-weight: 400;
                 margin-bottom: 72px;
             }
             .wrapper {
                 display: grid;
                 grid-template-columns: 250px 1fr;
                 grid-column-gap: 35px;
-                
-                    
+
+
                     .menu {
                         max-width: 250px;
                         grid-column: 1 / 3;
@@ -374,9 +375,9 @@ main {
                             .main-button();
                             background: transparent;
                         }
-                        
+
                     }
-                
+
                 .gallery {
                     display: flex;
                     gap: 19px;
@@ -394,7 +395,7 @@ main {
                         }
                         .about-prod {
                             position: absolute;
-                            
+
                             flex-direction: column;
                             align-items: center;
                             justify-content: center;
@@ -441,30 +442,86 @@ main {
     .sale{
         background-color: #000000;
         background-image: url('../../assets/img/tessa-wilson-ECr_8nuXpBA-unsplash.jpg');
-        background-position: center;
+        background-position-y: 43%;
         background-size: cover;
-        padding: 75px 0;
+        padding: 175px 0 180px 0;
         display: flex;
         justify-content: center;
         .container {
             .sale-border {
                 width: 715px;
                 border: 4px solid #f7f7f7;
-                padding: 15px;
+                padding: 20px;
                 .block {
                     width: 100%;
                     height: 100%;
                     background-color: @white-color;
                     opacity: 0.851;
-                    padding: 75px 0;
+                    padding: 100px 0 82px 0;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     .procent {
-                        margin-bottom: 60px;
+                        margin-bottom: 30px;
+                        font-size: 65px;
+                        font-family: "Oranienbaum";
+                        color: @dark2-green-color;
                     }
                     .ring {
-                        margin-bottom: 70px;
+                        margin-bottom: 80px;
+                        font-size: 25px;
+                        font-family: "Oranienbaum";
+                        color: @dark2-green-color
+                    }
+                    button {
+                        .main-button();
+                        a{
+                            color: @dark2-green-color;
+                        }
+                        width: 226px;
+                        border-color: @dark2-green-color;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .adv {
+        padding: 130px 32px 109px 0px;
+        background-color: @white-color;
+        .container {
+            h2 {
+                .text-orani-big();
+                color: @dark2-green-color;
+                text-align: center;
+                line-height: 1;
+                letter-spacing: 1px;
+                margin-bottom: 117px;
+            }
+            .adv-items {
+                display: flex;
+                justify-content: space-between;
+                .adv-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 187px;
+                    img {
+                        margin-bottom: 30px;
+                    }
+                    h5 {
+                        font-size: 22px;
+                        font-family: "Oranienbaum";
+                        color: @dark2-green-color;
+                        margin-bottom: 16px;
+                        font-weight: 400;
+                    }
+                    span {
+                        font-size: 15px;
+                        color: @dark2-green-color;
+                        text-align: center;
+                        line-height: 1.533;
                     }
                 }
             }
