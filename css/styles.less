@@ -527,4 +527,118 @@ main {
             }
         }
     }
+    .our {
+        padding: 130px 0px 120px;
+        background-image: url('../../assets/img/our/wallpapers.png');
+        .container {
+            padding: 0 80px;
+            h2 {
+                .text-orani-big();
+                text-align: center;
+                margin-bottom: 75px;
+                color: @white-color;
+                letter-spacing: 1px;
+            }
+            .wrap {
+                display: flex;
+                justify-content: space-between;
+                .star {
+                    &:first-child p {
+                        margin-bottom: 90px;
+                        padding-top: 33px;
+                        padding-left: 10px;
+                    }
+                    &:last-child .img-border {
+                        margin-bottom: 100px;
+                    }
+                    p{
+                        .text-light-small();
+                        line-height: 23px;
+                        max-width: 432px;
+                    }
+                    .img-border {
+                        border: 2px solid #fff;
+                        padding: 5px;
+                        max-width: 425px;
+                        height: 410px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .reviews {
+        padding: 132px 0 131px;
+        background-color: @bckg-light-color;
+        .container {
+            padding: 0px 90px;
+            h2 {
+                .text-orani-big();
+                letter-spacing: 1px;
+                margin-bottom: 70px;
+                color: @dark2-green-color;
+                text-align: center;
+            }
+            .slider {
+                .slider-item {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 85px;
+                    align-items: center;
+                    .photo {
+                        position: relative;
+                        .photo-wrap {
+                            max-width: 415px;
+                            height: 385px;
+                            position: relative;
+                            z-index: 5;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                            span {
+                                font-size: 14px;
+                                color: @white-color;
+                                position: absolute;
+                                z-index: 10;
+                                bottom: 5px;
+                                left: 135px;
+                            }
+                            &::after {
+                                content: '';
+                                display: block;
+                                max-width: 415px;
+                                height: 110px;
+                                background: linear-gradient(transparent, black);
+                                position: relative;
+                                top: -113px;
+                            }
+                        }
+                        .block {
+                            width: 400px;
+                            height: 400px;
+                            background-image: url('../../assets/img/our/wallpapers.png');
+                            background-color: @dark-green-color;
+                            background-position: center;
+                            background-size: cover;
+                            position: absolute;
+                            top: 70px;
+                            left: -70px;
+                        }
+                    }
+                    .review {
+                        max-width: 390px;
+                        margin-top: 94px;
+                       p {
+                        .text-green();
+                       } 
+                    }
+                }
+            }
+        }
+    }
 }
