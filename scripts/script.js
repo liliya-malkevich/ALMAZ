@@ -1,10 +1,9 @@
+console.log($('.slider'))
 $('.slider').slick({
     arrows: true,
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true,
-    draggable: false
+
   });
