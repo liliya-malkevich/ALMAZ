@@ -1,0 +1,93 @@
+@media screen and (max-width: 1750px) {
+    main {
+        .second{
+            gap: 10px; 
+            .img-region{
+                .img-wrapper {
+                    img{
+                        width: 95%;
+                        height: 95%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1620px) {
+    main {
+        .second{
+            gap: 15px; 
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    main {
+        .second{
+            padding-bottom: 165px;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    main {
+        .second{
+            .grid-wrapper { 
+                .info { 
+                    padding-top: 80px;
+                }
+            }
+
+        }
+
+        .products {
+            .container {
+                h2 {
+                    margin-bottom: 50px;
+                }
+                .wrapper {
+                    grid-template-columns: 1fr;
+                    justify-items: center;
+                    .menu {
+                        max-width: 550px;
+                        grid-column: 1 / 1;
+                        grid-row: 1 / 1;
+                        text-align: center;
+                        span {
+                            display: none;
+                        }
+                        nav {
+                            margin-bottom: 55px;
+                            ul {
+                                flex-direction: row;
+                                gap: 20px;
+                            }
+                        }
+                    }
+                    .search {
+                        grid-column: 1 / 3;
+                        grid-row: 3 / 3;
+                        text-align: center;
+                    }
+                    .gallery {
+                        grid-column: 1 / 1;
+                        grid-row: 2 / 2;
+                        justify-content: center;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
