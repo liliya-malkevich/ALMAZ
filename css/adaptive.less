@@ -57,6 +57,7 @@
                 .wrapper {
                     grid-template-columns: 1fr;
                     justify-items: center;
+                    grid-column-gap: 0px;
                     .menu {
                         max-width: 550px;
                         grid-column: 1 / 1;
@@ -87,7 +88,167 @@
                 }
             }
         }
+        .reviews {
+            .container {
+                .slider {
+                    button {
+                        &.slick-next{
+                            right: -82px;
+                        }
+                        &.slick-prev{
+
+                            left: -82px;
+                        }
+                    }
+            }
+        }
     }
 
+    }
+}
 
+@media screen and (max-width: 1150px) {
+    main {
+        .six {
+            left: -21%;
+        }
+        .second {
+            .grid-wrapper{
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    h1 {
+                        margin-bottom: 450px;
+                    }
+                }
+            }
+            .img-region{
+                position: absolute;
+                left: calc(50% - 213px);
+                top: 235px;
+                .img-wrapper {
+                    max-width: 440px;
+                    justify-content: center;
+                }
+                img {
+                    width: 100%;
+                    height: 100%; 
+                }
+            }
+        }
+        .about {
+            .container {
+                .director-wrap {
+                    margin-left: 40px;
+                }
+                .about-desc {
+                    padding: 45px 0 0px 45px;
+                }
+            }
+        }
+        .adv {
+            padding-right: 0;
+            .container {
+               .adv-items {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                justify-content: center;
+                justify-items: center;
+                grid-row-gap: 10px;
+                .bottom {
+                    margin-top: 180px;
+                }
+                .g-right {
+                    grid-column: 3 / 3;
+                    grid-row: 2 / 3;
+                }
+               } 
+            }
+        }
+        .our {
+            .container {
+                .wrap {
+                    justify-content: center;
+                    gap: 20px;
+                }
+            }
+        }
+        .reviews {
+            .container {
+                .slider {
+                    .slider-item {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        .container {
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            .subscribe {
+               text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 945px) {
+ main {
+    .products{
+        .container{
+            .wrapper{
+                .gallery{
+                    .gallery-item{
+                        width: 230px;
+                        height: 230px;
+                    }
+                }
+            }
+        }
+    }   
+    .our {
+        padding: 60px 0px 60px;
+        .container {
+            .wrap {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 30px;
+                text-align: center;
+                p{
+                    margin-top: 0;
+                    &:last-child {
+                        grid-column: 1 / 1;
+                        grid-row: 3 / 3;
+                    }
+                }
+                .img-border {
+                    &:first-of-type {
+                        grid-column: 1 / 1;
+                        grid-row: 4 / 4;
+                        margin-top: 0;
+                    }
+                    &:last-of-type {
+                        grid-column: 1 / 1;
+                        grid-row: 2 / 2;
+                    }
+                }
+            }
+        }
+     }
+ }
+
+}
+
+@media screen and (max-width: 768px) {
+//  * {
+//     font-size: 1vw !important; 
+//  }
 }

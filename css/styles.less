@@ -590,7 +590,7 @@ main {
         }
     }
     .our {
-        padding: 130px 0px 120px;
+        padding: 130px 0px 180px;
         background-image: url('../../assets/img/our/wallpapers.png');
         .container {
             padding: 0 80px;
@@ -602,21 +602,20 @@ main {
                 letter-spacing: 1px;
             }
             .wrap {
-                display: flex;
-                justify-content: space-between;
-                .star {
-                    &:first-child p {
-                        margin-bottom: 90px;
-                        padding-top: 33px;
-                        padding-left: 10px;
-                    }
-                    &:last-child .img-border {
-                        margin-bottom: 100px;
-                    }
+                display: grid;
+                grid-template-columns: repeat(2, 425px);
+                grid-template-rows: repeat(4, 159px);
+                justify-items: center;
+                grid-column-gap: 173px;
                     p{
                         .text-light-small();
+                        margin-top: 35px;
                         line-height: 23px;
                         max-width: 432px;
+                        &:last-child  {
+                            grid-column: 2 / 2;
+                            grid-row: 4 / 4;
+                        }
                     }
                     .img-border {
                         border: 2px solid #fff;
@@ -628,8 +627,13 @@ main {
                             height: 100%;
                             object-fit: cover;
                         }
+                        &:first-of-type{
+                            grid-column: 1 / 1;
+                            grid-row: 2 / 2;
+                            margin-top: 121px;
+                        }
                     }
-                }
+                
             }
         }
     }
