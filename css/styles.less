@@ -73,6 +73,35 @@ button {
     padding-bottom: 3px;
 }
 
+.calc-right {
+    right: calc(50% - 90px) !important;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+
+
+.menu-burger {
+    position: fixed;
+    width: 300px;
+    height: 50%;
+    top: 0px;
+    right: 0;
+    background: #000000cf;
+    z-index: 4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
 .slick-arrow {
     &::before {
         content: ' ';
@@ -209,6 +238,9 @@ a {
                     align-items: center;
                     margin-right: 9px;
                 }
+                .phone-svg {
+                    fill: #7a7b6d;
+                }
                 a {
                     color: @white-color;
                 }
@@ -222,8 +254,16 @@ a {
                 color: @white-color;
             }
             }
+            .burger {
+                display: none;
+            }
+            .close {
+                display: none;
+                position: fixed;
+                top: 25px;
+                z-index: 200;
+            }
         }
-
     }
 }
 
@@ -356,13 +396,14 @@ main {
         }
         .about-two {
             max-width: 485px;
-            margin-bottom: 26px;
             .text-green();
+           
         }
         .sign {
             display: flex;
             align-items: end;
             gap: 22px;
+            margin-top: 26px;
             p{
                 font-family: "Oranienbaum";
                 font-size: 14px;
@@ -400,13 +441,18 @@ main {
                         }
                         nav {
                             margin-bottom: 102px;
+                            .drop-down {
+                                display: none
+                            }
                             ul {
                                 list-style: none;
                                 display: flex;
                                 flex-direction: column;
                                 gap: 10px;
+
                                 li {
                                     .text-light-small();
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -675,7 +721,7 @@ main {
                     .photo {
                         position: relative;
                         .photo-wrap {
-                            max-width: 415px;
+                            width: 415px;
                             height: 385px;
                             position: relative;
                             z-index: 5;
@@ -781,12 +827,19 @@ main {
                         &:hover {
                             .border-hover();
                         }
-                        .text-light-mid();
+                        span {
+                            .text-light-mid();
+                        }
+                        svg {
+                            display: none
+                        }
                     }
+
                 }
             }
         }
         .subscribe {
+            z-index: 100;
             .flex-column();
             h5 {
                 .text-light-bold();
@@ -817,7 +870,7 @@ main {
                     width: 160px;
                     padding: 15px;
                     border: none;
-                    background-color: #000000;
+                    background-color: #23251b;
                     a{
                         .text-light-mid();
                         letter-spacing: 1px;
