@@ -554,9 +554,23 @@
             .wrapper {
                 position: relative;
                 .menu {
+                    span {
+                        margin-bottom: 0px;
+                    }
                     nav {
                         .drop-down {
                             display: flex;
+                            align-items: baseline;
+                            gap: 21px;
+                            cursor: pointer;
+                            svg {
+                                transform: rotate(90deg);
+                            }
+                            .active-prod {
+                                font-size: 18px;
+                                color: #fff;
+                                font-family: "PlayBold";
+                            }
                         }
                         ul {
                             &.active-menu {
@@ -564,16 +578,34 @@
                                 flex-direction: column;
                                 z-index: 10;
                                 left: calc(50% - 85px);
-                                background-color: bisque;
-                                display: block;
-
-                                
+                                top: 30px;
+                                background-color: #fff;
+                                display: flex;
+                                gap: 10px;
+                                width: 178px;
+                                padding: 15px 10px;
+                                text-align: left;
+                                li {
+                                    &.active-products {
+                                       display: none;
+                                    }
+                                }
                             }
                             display: none;
+                            li {
+                                color: #24261b;
+                                font-family: "PlayRegular";
+                                font-size: 14px;
+                            }
                         }
                     }
                 }
             }
+        }
+    }
+    .second{
+        .img-region {
+            top: 165px;
         }
     }
     .reviews {
@@ -661,6 +693,44 @@
                 }
                 button {
                     width: 290px;
+                }
+            }
+        }
+    }
+ }
+}
+
+@media screen and (max-width: 510px) {
+ main {
+    .products {
+        .container {
+            .wrapper {
+                .gallery {
+                    .gallery-item {
+                        width: 140px;
+                        height: 140px;
+                        .about-prod {
+                            bottom: -140px;
+                            p {
+                                font-size: 13px;
+                                line-height: 18px;
+                                height: 32px;
+                            }
+                            span {
+                                font-size: 13px;
+                            }
+                            button {
+                                font-size: 11px;
+                                width: 114px;
+                            }
+                        }
+                        &:hover{
+                            .gallery-img{
+                                height: 95%;
+                            }
+                            
+                        }
+                    }
                 }
             }
         }

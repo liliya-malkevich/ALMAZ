@@ -24,12 +24,32 @@ $('.slider').slick({
     $('.burger').removeClass('d-none');
   } );
 
+  var clickedTab = $("#catalog .active-products");
+	var tabWrapper = $(".gallery");
+	var activeTab = $(".gallery.active-products");
+
   $('#drop-down').on( "click", (e) => {
     $('#catalog').toggleClass('active-menu');
   } );
 
   $('.products-menu-item').on( "click", (e) => {
-    $('#catalog').toggleClass('active-menu');
-    console.log($(e.target).text())
-    $('#drop-down span').text($(e.target).text());
+    changeCatalogName(e);
+    $('.products-menu-item').removeClass('active-products');
+    $(e.target).addClass("active-products");
+    clickedTab = $("#catalog .active-products");
+    console.log( $("#catalog .active-products"))
+    tabWrapper.removeClass('active-products');
+    let clickedTabIndex = clickedTab.index();
+    tabWrapper.eq(clickedTabIndex).addClass("active-products");
   } );
+
+  let changeCatalogName = (e) => {
+    $('#catalog').toggleClass('active-menu');
+    $('#drop-down span').text($(e.target).text());
+  }
+
+  $(document).on("click", function(event){
+    if(!$(event.target).closest(".menu").length){
+      $('#catalog').removeClass('active-menu');
+    }
+});
