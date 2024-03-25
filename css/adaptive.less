@@ -317,25 +317,15 @@
                     }
                     .about-one {
                         gap: 0px;
-                        max-width: 279px;
-                        margin-bottom: 11px;
                         span {
-                            font-size: calc(47px - 3.062vw);
+
                             line-height: 0.1;
                         }
                         p {
                             .text-green-a();
                         }
                     }
-                    .about-two {
-                        &:first-of-type {
-                            margin-left: 62px;
-                            margin-bottom: 16px;
-                        }
-                        &:last-of-type {
-                            max-width: 275px;
-                        }
-                    }
+
                     .about-two {
                        .text-green-a();
                     }
@@ -758,7 +748,30 @@
             }
         }
     }
+    .about {
+        .container {
+            .about-desc {
+                .about-one {
+                    max-width: 279px;
+                    margin-bottom: 11px;
+                    span {
+                        font-size: calc(47px - 3.062vw);
+                    }
+                }
+                .about-two {
+                    &:first-of-type {
+                        margin-left: 62px;
+                        margin-bottom: 16px;
+                    }
+                    &:last-of-type {
+                        max-width: 275px;
+                    }
+                }
+            }
+        }
+    }
  }
+
 }
 
 @media screen and (max-width: 510px) {
