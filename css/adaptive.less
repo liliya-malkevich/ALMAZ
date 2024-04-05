@@ -636,7 +636,7 @@
                 top: 140px;
             }
             .slider-item {
-                gap:40px;
+                gap:18px;
                 .photo {
                     .photo-wrap{
                         width: 230px;
@@ -655,6 +655,7 @@
                 .review {
                     p {
                         font-size: 13.7px;
+                        line-height: 1.5;
                     }
                 }
             }
@@ -745,6 +746,9 @@
                         }
                     }
                 }
+                .search {
+                    text-align: left;
+                }
             }
         }
     }
@@ -801,6 +805,9 @@
 }
 
 @media screen and (max-width: 420px) {
+.menu-burger {
+    width: 100%;
+}
 .header {
     padding: 22px 0 18px 0;
     nav {
@@ -963,5 +970,27 @@
                 }
             }
         }
+        .our {
+            .container {
+                h2 {
+                    text-align: left;
+                }
+                .wrap {
+                    text-align: left;
+                    p{
+                        line-height: 1.42;
+                    }
+                    .img-border {
+                        height: 180px;
+                    }
+                }
+            }
+        }
+        .reviews {
+            padding: 60px 0 0px;
+        }
+    }
+    .footer {
+        padding: 90px 0 50px 0;
     }
 }

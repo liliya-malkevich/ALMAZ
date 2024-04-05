@@ -53,3 +53,18 @@ $('.slider').slick({
       $('#catalog').removeClass('active-menu');
     }
 });
+
+$(".btn-up input[type=file]").change(function(){
+  let filename = $(this).val().replace(/.*\\/, "");
+  $("#fileName").val(filename);
+});
+
+let popupCount = $('.count-popup');
+
+$('.count-open').on("click", function(event){
+  popupCount.css('display','block')
+});
+
+$('#close-count').on("click", function(event){
+  popupCount.css('display','none')
+});
