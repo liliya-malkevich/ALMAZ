@@ -1,38 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALMAZ</title>
-    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/slick-carousel/slick/slick-theme.css" />
     <link rel="stylesheet" href="./dist/css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
-        <nav>
-        <div class="left-menu-wrapper">
-            <div>
-                <img src="./assets/img/header/logo.png" alt="logo">
-            </div>
-            <ul class="menu">
-                <li class="menu-item hide vis"><a href="#">Каталог</a></li>
-                <li class="menu-item hide vis"><a href="#">О нас</a></li>
-                <li class="menu-item count-open"><a href="#">
-                    <svg height="18" viewBox="0 0 512 512" width="18" fill="#fff" xmlns="http://www.w3.org/2000/svg"><g><path d="m420 248h-12v-232a8 8 0 0 0 -8-8h-328a8 8 0 0 0 -8 8v448a8 8 0 0 0 8 8h200v4a28.031 28.031 0 0 0 28 28h120a28.031 28.031 0 0 0 28-28v-200a28.031 28.031 0 0 0 -28-28zm-148 28v180h-192v-432h312v224h-92a28.031 28.031 0 0 0 -28 28zm160 200a12.01 12.01 0 0 1 -12 12h-120a12.01 12.01 0 0 1 -12-12v-200a12.01 12.01 0 0 1 12-12h120a12.01 12.01 0 0 1 12 12z"/><path d="m416 280h-112a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-96v-16h96z"/><path d="m368 336h-64a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-48v-8h48z"/><path d="m416 336h-24a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h24a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-8v-8h8z"/><path d="m368 384h-64a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-48v-8h48z"/><path d="m368 432h-64a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-48v-8h48z"/><path d="m416 384h-24a8 8 0 0 0 -8 8v72a8 8 0 0 0 8 8h24a8 8 0 0 0 8-8v-72a8 8 0 0 0 -8-8zm-8 72h-8v-56h8z"/><path d="m104 160h264a8 8 0 0 0 8-8v-40a8 8 0 0 0 -8-8h-264a8 8 0 0 0 -8 8v40a8 8 0 0 0 8 8zm8-40h248v24h-248z"/><path d="m104 56h104a8 8 0 0 0 0-16h-104a8 8 0 0 0 0 16z"/><path d="m232 56h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z"/><path d="m104 80h88a8 8 0 0 0 0-16h-88a8 8 0 0 0 0 16z"/><path d="m328 192h-216a8 8 0 0 0 0 16h216a8 8 0 0 0 0-16z"/><path d="m112 216a8 8 0 0 0 0 16h56a8 8 0 0 0 0-16z"/><path d="m200 216h-8a8 8 0 0 0 0 16h8a8 8 0 0 0 0-16z"/><path d="m192 424h-88a8 8 0 0 0 0 16h88a8 8 0 0 0 0-16z"/><path d="m104 416h24a8 8 0 0 0 0-16h-24a8 8 0 0 0 0 16z"/><path d="m192 264h-88a8 8 0 0 0 -8 8v88a8 8 0 0 0 8 8h88a8 8 0 0 0 8-8v-88a8 8 0 0 0 -8-8zm-8 88h-72v-72h72z"/></g></svg>
-                    <span class="hide vis">Расчет по эскизам</span></a>
-                </li>
-            </ul>
-        </div>
-        <div class="right-menu-wrapper">
-            <div class="number">
-                <div class="logo">
-                <svg class="phone-svg" version="1.1" id="Capa_1" height="12" width="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                    viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M373.333,266.88c-25.003,0-49.493-3.904-72.725-11.584c-11.328-3.904-24.171-0.896-31.637,6.699l-46.016,34.752
+            <nav>
+                <div class="left-menu-wrapper">
+                    <div>
+                        <img src="./assets/img/header/logo.png" alt="logo">
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item hide vis"><a href="#">Каталог</a></li>
+                        <li class="menu-item hide vis"><a href="#">О нас</a></li>
+                        <li class="menu-item count-open"><a href="#">
+                                <svg height="18" viewBox="0 0 512 512" width="18" fill="#fff"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <path
+                                            d="m420 248h-12v-232a8 8 0 0 0 -8-8h-328a8 8 0 0 0 -8 8v448a8 8 0 0 0 8 8h200v4a28.031 28.031 0 0 0 28 28h120a28.031 28.031 0 0 0 28-28v-200a28.031 28.031 0 0 0 -28-28zm-148 28v180h-192v-432h312v224h-92a28.031 28.031 0 0 0 -28 28zm160 200a12.01 12.01 0 0 1 -12 12h-120a12.01 12.01 0 0 1 -12-12v-200a12.01 12.01 0 0 1 12-12h120a12.01 12.01 0 0 1 12 12z" />
+                                        <path
+                                            d="m416 280h-112a8 8 0 0 0 -8 8v32a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8v-32a8 8 0 0 0 -8-8zm-8 32h-96v-16h96z" />
+                                        <path
+                                            d="m368 336h-64a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-48v-8h48z" />
+                                        <path
+                                            d="m416 336h-24a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h24a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-8v-8h8z" />
+                                        <path
+                                            d="m368 384h-64a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-48v-8h48z" />
+                                        <path
+                                            d="m368 432h-64a8 8 0 0 0 -8 8v24a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-24a8 8 0 0 0 -8-8zm-8 24h-48v-8h48z" />
+                                        <path
+                                            d="m416 384h-24a8 8 0 0 0 -8 8v72a8 8 0 0 0 8 8h24a8 8 0 0 0 8-8v-72a8 8 0 0 0 -8-8zm-8 72h-8v-56h8z" />
+                                        <path
+                                            d="m104 160h264a8 8 0 0 0 8-8v-40a8 8 0 0 0 -8-8h-264a8 8 0 0 0 -8 8v40a8 8 0 0 0 8 8zm8-40h248v24h-248z" />
+                                        <path d="m104 56h104a8 8 0 0 0 0-16h-104a8 8 0 0 0 0 16z" />
+                                        <path d="m232 56h8a8 8 0 0 0 0-16h-8a8 8 0 0 0 0 16z" />
+                                        <path d="m104 80h88a8 8 0 0 0 0-16h-88a8 8 0 0 0 0 16z" />
+                                        <path d="m328 192h-216a8 8 0 0 0 0 16h216a8 8 0 0 0 0-16z" />
+                                        <path d="m112 216a8 8 0 0 0 0 16h56a8 8 0 0 0 0-16z" />
+                                        <path d="m200 216h-8a8 8 0 0 0 0 16h8a8 8 0 0 0 0-16z" />
+                                        <path d="m192 424h-88a8 8 0 0 0 0 16h88a8 8 0 0 0 0-16z" />
+                                        <path d="m104 416h24a8 8 0 0 0 0-16h-24a8 8 0 0 0 0 16z" />
+                                        <path
+                                            d="m192 264h-88a8 8 0 0 0 -8 8v88a8 8 0 0 0 8 8h88a8 8 0 0 0 8-8v-88a8 8 0 0 0 -8-8zm-8 88h-72v-72h72z" />
+                                    </g>
+                                </svg>
+                                <span class="hide vis">Расчет по эскизам</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-menu-wrapper">
+                    <div class="number">
+                        <div class="logo">
+                            <svg class="phone-svg" version="1.1" id="Capa_1" height="12" width="12"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 405.333 405.333" style="enable-background:new 0 0 405.333 405.333;"
+                                xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path d="M373.333,266.88c-25.003,0-49.493-3.904-72.725-11.584c-11.328-3.904-24.171-0.896-31.637,6.699l-46.016,34.752
                                 c-52.779-28.16-86.571-61.931-114.389-114.368l33.813-44.928c8.512-8.533,11.563-20.971,7.915-32.64
                                 C142.592,81.472,138.667,56.96,138.667,32c0-17.643-14.357-32-32-32H32C14.357,0,0,14.357,0,32
                                 c0,205.845,167.488,373.333,373.333,373.333c17.643,0,32-14.357,32-32V298.88C405.333,281.237,390.976,266.88,373.333,266.88z
@@ -40,40 +74,46 @@
                                 c5.867,0,10.667,4.779,10.667,10.667c0,27.243,4.267,53.995,12.629,79.36c1.237,3.989,0.235,8.107-3.669,12.16l-38.827,51.413
                                 c-2.453,3.264-2.837,7.637-0.981,11.264c31.637,62.144,70.059,100.587,132.651,132.651c3.605,1.877,8.021,1.493,11.285-0.981
                                 l52.523-39.808c2.859-2.816,7.061-3.797,10.859-2.539c25.515,8.427,52.267,12.693,79.531,12.693
-                                c5.867,0,10.667,4.779,10.667,10.667V373.333z"/>
+                                c5.867,0,10.667,4.779,10.667,10.667V373.333z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <a href="#" class="hide">8(800) 000 00 00</a>
+                    </div>
+                    <div class="order hide">
+                        <a href="#">Заказать звонок</a>
+                    </div>
+                    <svg id="burger" class="burger" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"
+                        width="25" height="25">
+                        <title>menu-symbol-of-three-parallel-lines-svg</title>
+                        <style>
+                            .s0 {
+                                fill: #ffffff
+                            }
+                        </style>
+                        <g id="Layer">
+                            <path id="Layer" fill-rule="evenodd" class="s0"
+                                d="m0 3.9c0-1.1 0.9-2 2-2h20.8c1.1 0 1.9 0.9 1.9 2 0 1.1-0.8 2-2 2h-20.7c-1.1 0-2-0.9-2-2zm24.8 8.5c-0.1 1.1-0.9 2-2.1 2h-20.7c-1.1 0-2-0.9-2-2 0-1.1 0.9-2 2-2h20.7c1.2 0 2 0.9 2 2zm0 8.5c0 1.1-0.8 2-2 2h-20.7c-1.1 0-2-0.9-2-2 0-1.1 0.9-2 2-2h20.7c1.2 0 2 0.9 2 2z" />
                         </g>
-                    </g>
-                </svg>
-            </div>
-                <a  href="#" class="hide">8(800) 000 00 00</a>
-            </div>
-            <div class="order hide">
-                <a href="#">Заказать звонок</a>
-            </div>
-            <svg  id="burger" class="burger" version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="25" height="25">
-                <title>menu-symbol-of-three-parallel-lines-svg</title>
-                <style>
-                    .s0 { fill: #ffffff } 
-                </style>
-                <g id="Layer">
-                    <path id="Layer" fill-rule="evenodd" class="s0" d="m0 3.9c0-1.1 0.9-2 2-2h20.8c1.1 0 1.9 0.9 1.9 2 0 1.1-0.8 2-2 2h-20.7c-1.1 0-2-0.9-2-2zm24.8 8.5c-0.1 1.1-0.9 2-2.1 2h-20.7c-1.1 0-2-0.9-2-2 0-1.1 0.9-2 2-2h20.7c1.2 0 2 0.9 2 2zm0 8.5c0 1.1-0.8 2-2 2h-20.7c-1.1 0-2-0.9-2-2 0-1.1 0.9-2 2-2h20.7c1.2 0 2 0.9 2 2z"/>
-                </g>
-            </svg>
-            <svg id="close" class="close" width="25px" height="25px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+                    </svg>
+                    <svg id="close" class="close" width="25px" height="25px" viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
 
-                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                
-                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                
-                <g id="SVGRepo_iconCarrier">
-                
-                <path fill="#ffffff" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/>
-                
-                </g>
-                
-                </svg>
-        </div>
-        </nav>
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                        <g id="SVGRepo_iconCarrier">
+
+                            <path fill="#ffffff"
+                                d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z" />
+
+                        </g>
+
+                    </svg>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
@@ -87,41 +127,47 @@
             <div class="container grid-wrapper">
                 <div class="info">
                     <h1>Эксклюзивные украшения только для Вас!</h1>
-                    <p class="info-text">Вы всегда мечтали об изделии, но вам везде говорят, что это слишком сложно? Для нас это не проблема! Наши опытные мастера воплощают в жизнь самые невероятные эскизы.</p>
-                    <button class="main-button transp-button"><a href="#" >В каталог</a></button>
+                    <p class="info-text">Вы всегда мечтали об изделии, но вам везде говорят, что это слишком сложно? Для
+                        нас это не проблема! Наши опытные мастера воплощают в жизнь самые невероятные эскизы.</p>
+                    <button class="main-button transp-button"><a href="#">В каталог</a></button>
                 </div>
             </div>
             <div class="img-region">
-            <div class="img-wrapper">
-                <img src="./assets/img/second/woman.jpg" alt="woman">
-            </div>
+                <div class="img-wrapper">
+                    <img src="./assets/img/second/woman.jpg" alt="woman">
+                </div>
             </div>
         </section>
         <section class="about">
             <div class="container">
-            <div class="director-wrap">
-                <img src="./assets/img/third/linkedin-sales-navigator.jpg" alt="director">
-            </div>
-            <div class="about-desc">
-                <h3>Ювелирный дом Алмаз-это техника, умение и талант!</h3>
-                <div class="about-one">
-                    <span>К</span>
-                    <p>рупное ювелирное производство с сетью салонов и офисов в Москве и Санкт-Петербурге, большой производственной базой и обширным штатом блестящих мастеров-ювелиров, дизайнеров, ювелирных стилистов и других специалистов.</p>
+                <div class="director-wrap">
+                    <img src="./assets/img/third/linkedin-sales-navigator.jpg" alt="director">
                 </div>
-                <span class="about-two">
-                    Мы занимаемся производством необычных, эксклюзивных ювелирных украшений от эскиза до конечной продажи, а также предоставляем весь спектр ювелирных услуг.
-                </span>
-                <span class="about-two">
-                    Когда-то мы начинали как небольшая, но амбициозная команда профессионалов, влюбленных в свое дело. ЮД Алмаз сегодня – это большой, четко отлаженный процесс по созданию ювелирных украшений вашей мечты.
-                </span>
-                <div class="sign">
-                    <div class="sign-img">
-                        <img src="./assets/img/third/pngwin.png" alt="">
+                <div class="about-desc">
+                    <h3>Ювелирный дом Алмаз-это техника, умение и талант!</h3>
+                    <div class="about-one">
+                        <span>К</span>
+                        <p>рупное ювелирное производство с сетью салонов и офисов в Москве и Санкт-Петербурге, большой
+                            производственной базой и обширным штатом блестящих мастеров-ювелиров, дизайнеров, ювелирных
+                            стилистов и других специалистов.</p>
                     </div>
-                    <p>Иванов Д.В. Генеральный директор</p>
+                    <span class="about-two">
+                        Мы занимаемся производством необычных, эксклюзивных ювелирных украшений от эскиза до конечной
+                        продажи, а также предоставляем весь спектр ювелирных услуг.
+                    </span>
+                    <span class="about-two">
+                        Когда-то мы начинали как небольшая, но амбициозная команда профессионалов, влюбленных в свое
+                        дело. ЮД Алмаз сегодня – это большой, четко отлаженный процесс по созданию ювелирных украшений
+                        вашей мечты.
+                    </span>
+                    <div class="sign">
+                        <div class="sign-img">
+                            <img src="./assets/img/third/pngwin.png" alt="">
+                        </div>
+                        <p>Иванов Д.В. Генеральный директор</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
         <section class="products">
             <div class="container">
@@ -132,17 +178,22 @@
                         <span class="cat">Каталог</span>
                         <nav>
                             <div id="drop-down" class="drop-down"><span class="active-prod">Кольцa</span>
-                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 513" width="13" height="13">
+                                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 513" width="13"
+                                    height="13">
                                     <title>next-svg</title>
                                     <style>
-                                        .s0 { fill: #fff } 
+                                        .s0 {
+                                            fill: #fff
+                                        }
                                     </style>
                                     <g id="Layer">
                                         <g id="Layer">
-                                            <path id="Layer" class="s0" d="m388.4 242l-236.8-236.2c-7.7-7.7-20.3-7.7-28.1 0-7.7 7.8-7.7 20.4 0.1 28.1l222.7 222.1-222.7 222.1c-7.8 7.7-7.8 20.3-0.1 28.1 3.9 3.9 9 5.8 14.1 5.8 5.1 0 10.1-1.9 14-5.8l236.8-236.1c3.8-3.8 5.9-8.8 5.9-14.1 0-5.3-2.1-10.3-5.9-14z"/>
+                                            <path id="Layer" class="s0"
+                                                d="m388.4 242l-236.8-236.2c-7.7-7.7-20.3-7.7-28.1 0-7.7 7.8-7.7 20.4 0.1 28.1l222.7 222.1-222.7 222.1c-7.8 7.7-7.8 20.3-0.1 28.1 3.9 3.9 9 5.8 14.1 5.8 5.1 0 10.1-1.9 14-5.8l236.8-236.1c3.8-3.8 5.9-8.8 5.9-14.1 0-5.3-2.1-10.3-5.9-14z" />
                                         </g>
                                     </g>
-                                </svg></div>
+                                </svg>
+                            </div>
                             <ul id="catalog">
                                 <li class="products-menu-item">Броши</li>
                                 <li class="products-menu-item">Серьги</li>
@@ -159,186 +210,186 @@
                             укажите Ваши пожелания и
                             мы рассчитаем стоимость
                             изделия.</p>
-                        <button class="button count-open"><a href="#" >Рассчитать</a></button>
+                        <button class="button count-open"><a href="#">Рассчитать</a></button>
                     </div>
-                <div class="gallery">
+                    <div class="gallery">
                         <figure class="gallery-item gallery-item-1">
                             <img src="./assets/img/products/b-4.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женская брошь с сапфиром</p>
                                 <span>На заказ</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
                         <figure class="gallery-item gallery-item-2">
                             <img src="./assets/img/products/b-2.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женская брошь из бисера</p>
                                 <span>В наличии</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
                         <figure class="gallery-item gallery-item-2">
                             <img src="./assets/img/products/b-3.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женская брошь из золота</p>
                                 <span>В наличии</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
                         <figure class="gallery-item gallery-item-2">
                             <img src="./assets/img/products/b-5.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женская брошь из серебра</p>
                                 <span>В наличии</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
-                      </div>
-                      <div class="gallery">
+                    </div>
+                    <div class="gallery">
                         <figure class="gallery-item gallery-item-1">
                             <img src="./assets/img/products/e-1.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женские серьги с кварцем</p>
                                 <span>На заказ</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
                         <figure class="gallery-item gallery-item-1">
                             <img src="./assets/img/products/e-2.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женские серьги из серебра</p>
                                 <span>На заказ</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
                         <figure class="gallery-item gallery-item-1">
                             <img src="./assets/img/products/e-3.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женские серьги кованые</p>
                                 <span>На заказ</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
                         <figure class="gallery-item gallery-item-1">
                             <img src="./assets/img/products/e-4.jpg" class="gallery-img" alt="Image 1">
                             <div class="about-prod">
                                 <p>Женские серьги с сапфиром</p>
                                 <span>На заказ</span>
-                                <button>Уточнить цену</button>
-                              </div>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
                         </figure>
-                      </div>
-                <div class="gallery active-products">
-                    <figure class="gallery-item gallery-item-1">
-                      <img src="./assets/img/products/item1.jpg" class="gallery-img" alt="Image 1">
-                      <div class="about-prod">
-                        <p>Женское кольцо с бриллиантами</p>
-                        <span>На заказ</span>
-                        <button>Уточнить цену</button>
-                      </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-2">
-                        <img src="./assets/img/products/item2.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Женское кольцо с алмазами</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-3">
-                        <img src="./assets/img/products/item3.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Женское кольцо - золото</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-4">
-                        <img src="./assets/img/products/item4.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Женское кольцо с фианитами</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-5">
-                        <img src="./assets/img/products/item5.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Женское кольцо с минералами</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                  </div>
-                  <div class="gallery">
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/k-1.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Кулон из металла</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/k-2.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Кулон из красного золота</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/k-3.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Золотой именной кулон</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/k-4.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Кулон из золота с камнями</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                  </div>
-                  <div class="gallery">
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/c-1.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Цепочка с фифнитами</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/c-2.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Браслет из кварца</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-1">
-                        <img src="./assets/img/products/c-3.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Браслет из серебра</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                    <figure class="gallery-item gallery-item-4">
-                        <img src="./assets/img/products/c-4.jpg" class="gallery-img" alt="Image 1">
-                        <div class="about-prod">
-                            <p>Браслет из золота</p>
-                            <span>На заказ</span>
-                            <button>Уточнить цену</button>
-                          </div>
-                    </figure>
-                  </div>
+                    </div>
+                    <div class="gallery active-products">
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/item1.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Женское кольцо с бриллиантами</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-2">
+                            <img src="./assets/img/products/item2.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Женское кольцо с алмазами</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-3">
+                            <img src="./assets/img/products/item3.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Женское кольцо - золото</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-4">
+                            <img src="./assets/img/products/item4.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Женское кольцо с фианитами</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-5">
+                            <img src="./assets/img/products/item5.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Женское кольцо с минералами</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="gallery">
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/k-1.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Кулон из металла</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/k-2.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Кулон из красного золота</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/k-3.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Золотой именной кулон</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/k-4.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Кулон из золота с камнями</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="gallery">
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/c-1.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Цепочка с фифнитами</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/c-2.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Браслет из кварца</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-1">
+                            <img src="./assets/img/products/c-3.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Браслет из серебра</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                        <figure class="gallery-item gallery-item-4">
+                            <img src="./assets/img/products/c-4.jpg" class="gallery-img" alt="Image 1">
+                            <div class="about-prod">
+                                <p>Браслет из золота</p>
+                                <span>На заказ</span>
+                                <button class="price-know">Уточнить цену</button>
+                            </div>
+                        </figure>
+                    </div>
 
                 </div>
             </div>
@@ -357,52 +408,56 @@
         <section class="adv">
             <div class="container">
                 <h2>Почему выбирают нас</h2>
-            <div class="adv-items">
-                <div class="adv-item ring">
-                    <img src="./assets/img/adv/ring.png" alt="">
-                    <h5>Точность размеров</h5>
-                    <span>Кольца размерами от 15,5</span>
+                <div class="adv-items">
+                    <div class="adv-item ring">
+                        <img src="./assets/img/adv/ring.png" alt="">
+                        <h5>Точность размеров</h5>
+                        <span>Кольца размерами от 15,5</span>
+                    </div>
+                    <div class="adv-item bottom hammer">
+                        <img src="./assets/img/adv/hammer.png" alt="">
+                        <h5>Производство</h5>
+                        <span>Каждое изделие изготавливается вручную</span>
+                    </div>
+                    <div class="adv-item time">
+                        <img src="./assets/img/adv/fast-time.png" alt="">
+                        <h5>Сроки изготовления</h5>
+                        <span>От 14 до 30 дней</span>
+                        <span>Срочное изготовление - 7 дней</span>
+                    </div>
+                    <div class="adv-item board">
+                        <img src="./assets/img/adv/clipboard.png" alt="">
+                        <h5>Гарантия</h5>
+                        <span>Мы даем пожизненную гарантию на наши изделия</span>
+                    </div>
+                    <div class="adv-item g-right">
+                        <img src="./assets/img/adv/lorry.png" alt="">
+                        <h5>Доставка</h5>
+                        <span>Доставим готовые изделия в любой город России и стран СНГ</span>
+                    </div>
                 </div>
-                <div class="adv-item bottom hammer">
-                    <img src="./assets/img/adv/hammer.png" alt="">
-                    <h5>Производство</h5>
-                    <span>Каждое изделие изготавливается вручную</span>
-                </div>
-                <div class="adv-item time">
-                    <img src="./assets/img/adv/fast-time.png" alt="">
-                    <h5>Сроки изготовления</h5>
-                    <span>От 14 до 30 дней</span>
-                    <span>Срочное изготовление - 7 дней</span>
-                </div>
-                <div class="adv-item board">
-                    <img src="./assets/img/adv/clipboard.png" alt="">
-                    <h5>Гарантия</h5>
-                    <span>Мы даем пожизненную гарантию на наши изделия</span>
-                </div>
-                <div class="adv-item g-right">
-                    <img src="./assets/img/adv/lorry.png" alt="">
-                    <h5>Доставка</h5>
-                    <span>Доставим готовые изделия в любой город России и стран СНГ</span>
-                </div>
-            </div>
             </div>
         </section>
         <section class="our">
             <div class="container">
                 <h2>Наша мастерская</h2>
                 <div class="wrap">
-                
-                        <p>Ювелирный Дом Алмаз — новая звезда на небосводе ювелирного мира. Главный приоритет компании — клиент, удовлетворенный качественным и эксклюзивным украшением. Каждое наше изделие проходит строжайший контроль качества, который обеспечивают специалисты.</p>
-                        <div class="img-border">
-                            <img src="./assets/img/our/yuvelir_034973463563473487.jpg" alt="">
-                        </div>
-                    
-                  
-                        <div class="img-border">
-                            <img src="./assets/img/our/maxresdefault.jpg" alt="">
-                        </div>
-                        <p>Клиенты, обратившиеся к нам, сами участвуют в процессе по созданию и воплощению своей ювелирной мечты, будь то легкое колечко с необычным рисунком или большая подвеска с уникальным бриллиантом.</p>
-                   
+
+                    <p>Ювелирный Дом Алмаз — новая звезда на небосводе ювелирного мира. Главный приоритет компании —
+                        клиент, удовлетворенный качественным и эксклюзивным украшением. Каждое наше изделие проходит
+                        строжайший контроль качества, который обеспечивают специалисты.</p>
+                    <div class="img-border">
+                        <img src="./assets/img/our/yuvelir_034973463563473487.jpg" alt="">
+                    </div>
+
+
+                    <div class="img-border">
+                        <img src="./assets/img/our/maxresdefault.jpg" alt="">
+                    </div>
+                    <p>Клиенты, обратившиеся к нам, сами участвуют в процессе по созданию и воплощению своей ювелирной
+                        мечты, будь то легкое колечко с необычным рисунком или большая подвеска с уникальным
+                        бриллиантом.</p>
+
                 </div>
             </div>
         </section>
@@ -419,7 +474,9 @@
                             <div class="block"></div>
                         </div>
                         <div class="review">
-                            <p>Делала на заказ украшение в золоте. Выполнено на высшем уровне! Кольцо и серьги необыкновенной красоты. Ювелирный Дом Алмаз- профессионал своего дела! Всем своим друзьям и знакомым рекомендую!</p>
+                            <p>Делала на заказ украшение в золоте. Выполнено на высшем уровне! Кольцо и серьги
+                                необыкновенной красоты. Ювелирный Дом Алмаз- профессионал своего дела! Всем своим
+                                друзьям и знакомым рекомендую!</p>
                         </div>
                     </div>
                     <div class="slider-item">
@@ -431,7 +488,9 @@
                             <div class="block"></div>
                         </div>
                         <div class="review">
-                            <p>Я люблю этот ювелирный дом и я там частый гость. Почти все мои украшения из этого магазина.Сплошное очарование. Серьги серебряные с фианитами и белой керамикой просто восторг</p>
+                            <p>Я люблю этот ювелирный дом и я там частый гость. Почти все мои украшения из этого
+                                магазина.Сплошное очарование. Серьги серебряные с фианитами и белой керамикой просто
+                                восторг</p>
                         </div>
                     </div>
                     <div class="slider-item">
@@ -443,7 +502,8 @@
                             <div class="block"></div>
                         </div>
                         <div class="review">
-                            <p>Быстрая и качественная работа. Делали по эскизу, получилось все как я хотела. Буду обращаться еще</p>
+                            <p>Быстрая и качественная работа. Делали по эскизу, получилось все как я хотела. Буду
+                                обращаться еще</p>
                         </div>
                     </div>
                 </div>
@@ -464,7 +524,7 @@
                     <span>г.Москва</span>
                     <span>Миллионная ул.5</span>
                 </div>
-                </div>
+            </div>
             <div class="time-wrap">
                 <h5>Часы работы</h5>
                 <div class="time">
@@ -480,50 +540,69 @@
                     <li>
                         <a href="#">
                             <span>Инстаграм</span>
-                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364 364" width="35" height="35">
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364 364" width="35"
+                                height="35">
                                 <title>instagram-3-svg</title>
                                 <style>
-                                    .s0 { fill: #fff } 
+                                    .s0 {
+                                        fill: #fff
+                                    }
                                 </style>
                                 <g id="Layer">
-                                    <path id="Layer" fill-rule="evenodd" class="s0" d="m280.6 119.6v124.8c0 20-16.2 36.2-36.2 36.2h-124.8c-19.9 0-36.2-16.2-36.2-36.2v-124.8c0-19.9 16.3-36.2 36.2-36.2h124.8c20 0 36.2 16.3 36.2 36.2zm-33.7 62.4c0-35.8-29.1-64.9-64.9-64.9-35.8 0-64.9 29.1-64.9 64.9 0 35.8 29.1 64.9 64.9 64.9 35.8 0 64.9-29.1 64.9-64.9zm17.4-66.8c0-8.5-6.9-15.4-15.3-15.4-8.5 0-15.4 6.9-15.4 15.4 0 8.4 6.9 15.3 15.4 15.3 8.4 0 15.3-6.9 15.3-15.3z"/>
-                                    <path id="Layer" fill-rule="evenodd" class="s0" d="m182 144.5c-20.7 0-37.5 16.8-37.5 37.5 0 20.7 16.8 37.5 37.5 37.5 20.7 0 37.5-16.8 37.5-37.5 0-20.7-16.8-37.5-37.5-37.5z"/>
-                                    <path id="Layer" fill-rule="evenodd" class="s0" d="m364 0v364h-364v-364zm-56 119.6c0-35.1-28.5-63.6-63.6-63.6h-124.8c-35.1 0-63.6 28.5-63.6 63.6v124.8c0 35.1 28.5 63.6 63.6 63.6h124.8c35.1 0 63.6-28.5 63.6-63.6z"/>
+                                    <path id="Layer" fill-rule="evenodd" class="s0"
+                                        d="m280.6 119.6v124.8c0 20-16.2 36.2-36.2 36.2h-124.8c-19.9 0-36.2-16.2-36.2-36.2v-124.8c0-19.9 16.3-36.2 36.2-36.2h124.8c20 0 36.2 16.3 36.2 36.2zm-33.7 62.4c0-35.8-29.1-64.9-64.9-64.9-35.8 0-64.9 29.1-64.9 64.9 0 35.8 29.1 64.9 64.9 64.9 35.8 0 64.9-29.1 64.9-64.9zm17.4-66.8c0-8.5-6.9-15.4-15.3-15.4-8.5 0-15.4 6.9-15.4 15.4 0 8.4 6.9 15.3 15.4 15.3 8.4 0 15.3-6.9 15.3-15.3z" />
+                                    <path id="Layer" fill-rule="evenodd" class="s0"
+                                        d="m182 144.5c-20.7 0-37.5 16.8-37.5 37.5 0 20.7 16.8 37.5 37.5 37.5 20.7 0 37.5-16.8 37.5-37.5 0-20.7-16.8-37.5-37.5-37.5z" />
+                                    <path id="Layer" fill-rule="evenodd" class="s0"
+                                        d="m364 0v364h-364v-364zm-56 119.6c0-35.1-28.5-63.6-63.6-63.6h-124.8c-35.1 0-63.6 28.5-63.6 63.6v124.8c0 35.1 28.5 63.6 63.6 63.6h124.8c35.1 0 63.6-28.5 63.6-63.6z" />
                                 </g>
                             </svg>
                         </a>
                     </li>
                     <li><a href="#">
-                        <span>Фейсбук</span>
-                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" width="35" height="35">
-                            <title>facebook-svg</title>
-                            <style>
-                                .s0 { fill: #fff } 
-                            </style>
-                            <path id="Layer" fill-rule="evenodd" class="s0" d="m455 0v455h-455v-455zm-154 70h-48.4c-68.4 0-66.8 53.1-66.8 61v43.4h-31.8v53h31.8v157.6h65.2v-157.6h43.8c0 0 4.1-25.4 6.1-53.2h-49.6v-36.3c0-5.4 7.1-12.7 14.1-12.7h35.6c0 0 0-55.2 0-55.2z"/>
-                        </svg>
-                    </a></li>
+                            <span>Фейсбук</span>
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" width="35"
+                                height="35">
+                                <title>facebook-svg</title>
+                                <style>
+                                    .s0 {
+                                        fill: #fff
+                                    }
+                                </style>
+                                <path id="Layer" fill-rule="evenodd" class="s0"
+                                    d="m455 0v455h-455v-455zm-154 70h-48.4c-68.4 0-66.8 53.1-66.8 61v43.4h-31.8v53h31.8v157.6h65.2v-157.6h43.8c0 0 4.1-25.4 6.1-53.2h-49.6v-36.3c0-5.4 7.1-12.7 14.1-12.7h35.6c0 0 0-55.2 0-55.2z" />
+                            </svg>
+                        </a></li>
                     <li><a href="#"><span>Вконтакте</span>
-                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" width="35" height="35">
-                            <title>vk-svg</title>
-                            <style>
-                                .s0 { fill: #fff } 
-                            </style>
-                            <path id="Layer" fill-rule="evenodd" class="s0" d="m455 0v455h-455v-455zm-116.4 226.6c8.3-11.6 17.2-22.7 25.5-34.2 7.8-10.8 15.8-21.6 19.9-34.4 2.6-8.2 0.3-11.9-8.1-13.3-1.5-0.3-3-0.3-4.5-0.3h-49.9c-6.1-0.1-9.5 2.6-11.7 8-2.9 7.4-5.9 14.7-9.4 21.8-8 16.2-16.8 31.7-29.2 44.9-2.8 2.9-5.8 6.6-10.4 5.1-5.7-2.1-7.4-11.5-7.3-14.7l-0.1-57.6c-1.1-8.3-2.9-11.9-11.1-13.5h-51.8c-6.9 0-10.4 2.7-14.1 7-2.1 2.5-2.8 4.1 1.6 4.9 8.6 1.7 13.5 7.2 14.7 15.9 2.1 13.7 2 27.6 0.8 41.4-0.4 4.1-1.1 8.1-2.7 11.9-2.5 5.9-6.5 7.1-11.8 3.5-4.8-3.3-8.2-8-11.6-12.7-12.4-17.6-22.3-36.5-30.4-56.4-2.3-5.8-6.4-9.2-12.5-9.3-14.9-0.3-29.9-0.3-44.9 0-9 0.1-11.7 4.5-8 12.7 16.3 36.3 34.5 71.5 58.2 103.7 12.1 16.4 26.1 31 44.1 41.3 20.5 11.7 42.5 15.2 65.7 14.2 10.8-0.6 14.1-3.4 14.6-14.2 0.3-7.4 1.2-14.8 4.8-21.4 3.6-6.6 9.1-7.8 15.3-3.7 3.1 2 5.8 4.6 8.3 7.3 6.1 6.7 12 13.6 18.3 20.1 8 8.1 17.4 12.8 29.2 11.9h45.9c7.4-0.5 11.2-9.6 7-17.8-3-5.8-6.9-10.9-11-15.9-9.4-11.3-20.5-20.9-30.9-31.1-9.4-9.2-10-14.5-2.5-25.1z"/>
-                        </svg>
-                    </a></li>
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" width="35"
+                                height="35">
+                                <title>vk-svg</title>
+                                <style>
+                                    .s0 {
+                                        fill: #fff
+                                    }
+                                </style>
+                                <path id="Layer" fill-rule="evenodd" class="s0"
+                                    d="m455 0v455h-455v-455zm-116.4 226.6c8.3-11.6 17.2-22.7 25.5-34.2 7.8-10.8 15.8-21.6 19.9-34.4 2.6-8.2 0.3-11.9-8.1-13.3-1.5-0.3-3-0.3-4.5-0.3h-49.9c-6.1-0.1-9.5 2.6-11.7 8-2.9 7.4-5.9 14.7-9.4 21.8-8 16.2-16.8 31.7-29.2 44.9-2.8 2.9-5.8 6.6-10.4 5.1-5.7-2.1-7.4-11.5-7.3-14.7l-0.1-57.6c-1.1-8.3-2.9-11.9-11.1-13.5h-51.8c-6.9 0-10.4 2.7-14.1 7-2.1 2.5-2.8 4.1 1.6 4.9 8.6 1.7 13.5 7.2 14.7 15.9 2.1 13.7 2 27.6 0.8 41.4-0.4 4.1-1.1 8.1-2.7 11.9-2.5 5.9-6.5 7.1-11.8 3.5-4.8-3.3-8.2-8-11.6-12.7-12.4-17.6-22.3-36.5-30.4-56.4-2.3-5.8-6.4-9.2-12.5-9.3-14.9-0.3-29.9-0.3-44.9 0-9 0.1-11.7 4.5-8 12.7 16.3 36.3 34.5 71.5 58.2 103.7 12.1 16.4 26.1 31 44.1 41.3 20.5 11.7 42.5 15.2 65.7 14.2 10.8-0.6 14.1-3.4 14.6-14.2 0.3-7.4 1.2-14.8 4.8-21.4 3.6-6.6 9.1-7.8 15.3-3.7 3.1 2 5.8 4.6 8.3 7.3 6.1 6.7 12 13.6 18.3 20.1 8 8.1 17.4 12.8 29.2 11.9h45.9c7.4-0.5 11.2-9.6 7-17.8-3-5.8-6.9-10.9-11-15.9-9.4-11.3-20.5-20.9-30.9-31.1-9.4-9.2-10-14.5-2.5-25.1z" />
+                            </svg>
+                        </a></li>
                     <li><a href="#"><span>Телеграм-канал</span>
-                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" width="35" height="35">
-                            <title>telegram-svg</title>
-                            <style>
-                                .s0 { fill: #fff } 
-                            </style>
-                            <g id="Layer">
-                                <path id="Layer" fill-rule="evenodd" class="s0" d="m455 0v455h-455v-455zm-81.6 91l-297.9 114.9c-7.4 2.8-7.3 13.2 0.1 16l72.5 27.1 28.1 90.3c1.8 5.8 8.9 7.9 13.6 4.1l40.5-33c4.2-3.4 10.2-3.6 14.7-0.4l73 53c5 3.6 12.1 0.9 13.4-5.2l53.4-257.1c1.4-6.7-5.1-12.2-11.4-9.7z"/>
-                                <path id="Layer" fill-rule="evenodd" class="s0" d="m313.6 147.2l-141.9 87.3c-5.4 3.4-8 10-6.2 16.1l15.3 53.9c1.1 3.8 6.6 3.4 7.2-0.5l4-29.6c0.7-5.5 3.4-10.7 7.5-14.5l117-108.8c2.2-2-0.4-5.5-2.9-3.9z"/>
-                            </g>
-                        </svg>
-                    </a></li>
+                            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455" width="35"
+                                height="35">
+                                <title>telegram-svg</title>
+                                <style>
+                                    .s0 {
+                                        fill: #fff
+                                    }
+                                </style>
+                                <g id="Layer">
+                                    <path id="Layer" fill-rule="evenodd" class="s0"
+                                        d="m455 0v455h-455v-455zm-81.6 91l-297.9 114.9c-7.4 2.8-7.3 13.2 0.1 16l72.5 27.1 28.1 90.3c1.8 5.8 8.9 7.9 13.6 4.1l40.5-33c4.2-3.4 10.2-3.6 14.7-0.4l73 53c5 3.6 12.1 0.9 13.4-5.2l53.4-257.1c1.4-6.7-5.1-12.2-11.4-9.7z" />
+                                    <path id="Layer" fill-rule="evenodd" class="s0"
+                                        d="m313.6 147.2l-141.9 87.3c-5.4 3.4-8 10-6.2 16.1l15.3 53.9c1.1 3.8 6.6 3.4 7.2-0.5l4-29.6c0.7-5.5 3.4-10.7 7.5-14.5l117-108.8c2.2-2-0.4-5.5-2.9-3.9z" />
+                                </g>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
             <div class="subscribe">
@@ -544,20 +623,23 @@
     </footer>
     <div class="count-popup">
         <div class="count-container">
-            <div class="close" id="close-count">
+            <div class="close-popup" id="close-count">
                 <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68" width="23" height="23">
                     <title>Закрыть</title>
                     <defs>
                         <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-                            <path d="m0 0h68v68h-68z"/>
+                            <path d="m0 0h68v68h-68z" />
                         </clipPath>
                     </defs>
                     <style>
-                        .s0 { fill: #ffffff } 
+                        .s0 {
+                            fill: #ffffff
+                        }
                     </style>
                     <g id="Clip-Path" clip-path="url(#cp1)">
                         <g id="Layer">
-                            <path id="Layer" class="s0" d="m37.8 34l29.4-29.5c1.1-1 1.1-2.7 0-3.7-1-1.1-2.7-1.1-3.7 0l-29.5 29.4-29.5-29.4c-1-1.1-2.7-1.1-3.7 0-1.1 1-1.1 2.7 0 3.7l29.4 29.5-29.4 29.5c-1.1 1-1.1 2.7 0 3.7 0.5 0.5 1.2 0.8 1.9 0.8 0.6 0 1.3-0.3 1.8-0.8l29.5-29.4 29.5 29.4c0.5 0.5 1.2 0.8 1.8 0.8 0.7 0 1.4-0.3 1.9-0.8 1.1-1 1.1-2.7 0-3.7z"/>
+                            <path id="Layer" class="s0"
+                                d="m37.8 34l29.4-29.5c1.1-1 1.1-2.7 0-3.7-1-1.1-2.7-1.1-3.7 0l-29.5 29.4-29.5-29.4c-1-1.1-2.7-1.1-3.7 0-1.1 1-1.1 2.7 0 3.7l29.4 29.5-29.4 29.5c-1.1 1-1.1 2.7 0 3.7 0.5 0.5 1.2 0.8 1.9 0.8 0.6 0 1.3-0.3 1.8-0.8l29.5-29.4 29.5 29.4c0.5 0.5 1.2 0.8 1.8 0.8 0.7 0 1.4-0.3 1.9-0.8 1.1-1 1.1-2.7 0-3.7z" />
                         </g>
                     </g>
                 </svg>
@@ -567,26 +649,30 @@
                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 535 534" width="64" height="64">
                         <title>notepad-svg</title>
                         <style>
-                            .s0 { fill: #ffffff } 
+                            .s0 {
+                                fill: #ffffff
+                            }
                         </style>
-                        <path id="Layer" fill-rule="evenodd" class="s0" d="m450.7 104.9v356.2c0 30.3-24.6 54.9-54.9 54.9h-264.9c-30.3 0-54.9-24.6-54.9-54.9v-356.2c0-30.3 24.6-54.9 54.9-55h80.4c9.1-20.6 29.5-33.9 52.1-33.9 22.5 0 42.9 13.3 52.1 33.9h80.3c30.3 0.1 54.9 24.7 54.9 55zm-255.2-30v11c0 16.5 13.4 29.9 29.9 29.9h75.9c16.5 0 29.9-13.4 29.9-29.9v-11h-24.8c-5.9 0-10.9-4-12.2-9.8-3.1-13.9-16-24.1-30.8-24.1-14.8 0-27.8 10.2-30.9 24.1-1.2 5.8-6.3 9.8-12.2 9.8zm230.2 30c0-16.6-13.4-29.9-29.9-30h-39.6v11c0 30.3-24.6 54.9-54.9 54.9h-75.9c-30.3 0-54.9-24.6-54.9-54.9v-11h-39.6c-16.5 0.1-29.9 13.4-29.9 30v356.2c0 16.5 13.4 29.9 29.9 29.9h264.9c16.5 0 29.9-13.4 29.9-29.9z"/>
-                        <path id="Layer" class="s0" d="m325.2 247l-82 80.1-41.7-40.7c-4.9-4.8-12.8-4.7-17.6 0.1-4.8 4.9-4.9 12.7 0 17.6l0.1 0.2 50.4 49.2c4.9 4.7 12.6 4.7 17.5 0l90.8-88.6c4.9-4.9 5-12.8 0.2-17.7-4.8-4.9-12.7-5-17.7-0.2z"/>
+                        <path id="Layer" fill-rule="evenodd" class="s0"
+                            d="m450.7 104.9v356.2c0 30.3-24.6 54.9-54.9 54.9h-264.9c-30.3 0-54.9-24.6-54.9-54.9v-356.2c0-30.3 24.6-54.9 54.9-55h80.4c9.1-20.6 29.5-33.9 52.1-33.9 22.5 0 42.9 13.3 52.1 33.9h80.3c30.3 0.1 54.9 24.7 54.9 55zm-255.2-30v11c0 16.5 13.4 29.9 29.9 29.9h75.9c16.5 0 29.9-13.4 29.9-29.9v-11h-24.8c-5.9 0-10.9-4-12.2-9.8-3.1-13.9-16-24.1-30.8-24.1-14.8 0-27.8 10.2-30.9 24.1-1.2 5.8-6.3 9.8-12.2 9.8zm230.2 30c0-16.6-13.4-29.9-29.9-30h-39.6v11c0 30.3-24.6 54.9-54.9 54.9h-75.9c-30.3 0-54.9-24.6-54.9-54.9v-11h-39.6c-16.5 0.1-29.9 13.4-29.9 30v356.2c0 16.5 13.4 29.9 29.9 29.9h264.9c16.5 0 29.9-13.4 29.9-29.9z" />
+                        <path id="Layer" class="s0"
+                            d="m325.2 247l-82 80.1-41.7-40.7c-4.9-4.8-12.8-4.7-17.6 0.1-4.8 4.9-4.9 12.7 0 17.6l0.1 0.2 50.4 49.2c4.9 4.7 12.6 4.7 17.5 0l90.8-88.6c4.9-4.9 5-12.8 0.2-17.7-4.8-4.9-12.7-5-17.7-0.2z" />
                     </svg>
                     <h2>Заполните форму</h2>
                 </div>
                 <p class="desc">Пришлите нам Ваши пожелания по украшению: картинку или ссылку на сайт и его параметры.
                     Вы можете оставить только свой контактный номер и мы с Вами свяжемся для уточнения всех деталей.</p>
             </div>
-            <form>
+            <form id="count-form">
                 <div class="left-form">
-                    <input type="text" placeholder="Имя" class="standart-input">
-                    <input type="text" placeholder="Телефон" class="standart-input">
-                    <input type="text" placeholder="E-mail" class="standart-input">
+                    <input type="text" placeholder="Имя" class="standart-input" name="name">
+                    <input type="text" placeholder="Телефон" class="standart-input" name="phone">
+                    <input type="email" placeholder="E-mail" class="standart-input" name="email">
                     <div class="up-file">
                         <input type="text" id="fileName" placeholder="Приложить файл" disabled class="file-name">
                         <div class="btn-up">
                             <label>
-                                <input type="file">
+                                <input type="file" name="file">
                                 <span>Загрузить</span>
                             </label>
                         </div>
@@ -602,26 +688,71 @@
                         </label>
                     </div>
                     <div class="dropdown">
-                    <select name="size" id="" placeholder="Размер изделия" class="size">
-                        <option value="" disabled selected>Размер изделия</option>
-                        <option value="1">15</option>
-                        <option value="2">15.5</option>
-                        <option value="3">16</option>
-                        <option value="4">16.5</option>
-                        <option value="5">17</option>
-                    
-                    </select>
-                </div>
+                        <select name="size" id="" placeholder="Размер изделия" class="size">
+                            <option value="" disabled selected>Размер изделия</option>
+                            <option value="1">15</option>
+                            <option value="2">15.5</option>
+                            <option value="3">16</option>
+                            <option value="4">16.5</option>
+                            <option value="5">17</option>
+
+                        </select>
+                    </div>
                 </div>
                 <div class="right-form">
                     <input type="text" placeholder="Опишите ваши пожелания">
-                    <button type="button" class="send-form">Отправить</button>
+                    <button type="submit" class="send-form">Отправить</button>
+
+                </div>
+            </form>
+            <div class="message">Спасибо за заказ</div>
+        </div>
+    </div>
+    <div class="price-popup">
+        <div class="price-container">
+            <div class="close-popup">
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68" width="23" height="23">
+                    <title>Закрыть</title>
+                    <defs>
+                        <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                            <path d="m0 0h68v68h-68z" />
+                        </clipPath>
+                    </defs>
+                    <style>
+                        .s0 {
+                            fill: #ffffff
+                        }
+                    </style>
+                    <g id="Clip-Path" clip-path="url(#cp1)">
+                        <g id="Layer">
+                            <path id="Layer" class="s0"
+                                d="m37.8 34l29.4-29.5c1.1-1 1.1-2.7 0-3.7-1-1.1-2.7-1.1-3.7 0l-29.5 29.4-29.5-29.4c-1-1.1-2.7-1.1-3.7 0-1.1 1-1.1 2.7 0 3.7l29.4 29.5-29.4 29.5c-1.1 1-1.1 2.7 0 3.7 0.5 0.5 1.2 0.8 1.9 0.8 0.6 0 1.3-0.3 1.8-0.8l29.5-29.4 29.5 29.4c0.5 0.5 1.2 0.8 1.8 0.8 0.7 0 1.4-0.3 1.9-0.8 1.1-1 1.1-2.7 0-3.7z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="price-header">
+
+                <h2>Уточняйте цену на это изделие!</h2>
+
+                <p class="desc">Заполните контактные данные и укажите Ваши пожелания, если это требуется.
+                    Мы рассчитаем стоимость изделия с учетом Ваших пожеланий и свяжемся с Вами!</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Имя" class="standart-input">
+                <input type="text" placeholder="Телефон" class="standart-input">
+                <input type="text" placeholder="E-mail" class="standart-input">
+                <div class="wish">
+                    <input type="text" placeholder="Опишите ваши пожелания">
+                    <button type="submit" class="send-price">Отправить</button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="./node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="./docs/jquery.min.js"></script>
+    <script src="./docs/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./docs/slick.min.js"></script>
     <script src="./scripts/script.js"></script>
 </body>
+
 </html>

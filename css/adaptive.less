@@ -261,6 +261,29 @@
 
 }
 
+@media screen and (max-width: 800px) {
+    .count-popup {
+        position: absolute;
+        .count-container {
+            form {
+                flex-direction: column;
+                .right-form {
+                    input {
+                        width: 305px;
+                    }
+                    .send-form {
+                        width: 305px;
+                    }
+                }
+            }
+        }
+    }
+    .price-popup {
+        position: absolute;
+    }
+    
+}
+
 @media screen and (max-width: 768px) {
     main {
         .second {
@@ -467,7 +490,35 @@
             }
         }
     }
-
+    .count-popup {
+        .count-container {
+            .close-popup {
+                right: 10px;
+                top: 25px;
+            }
+            .count-header {
+                .fill-form {
+                    margin-bottom: 50px;
+                    h2 {
+                        font-size: 25px;
+                    }
+                }
+                .desc {
+                    font-size: 14px;
+                    margin-bottom: 40px;
+                }
+            }
+            form {
+                gap: 30px;
+                .right-form {
+                    gap: 30px;
+                    input {
+                        padding: 25px 0px 165px 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -924,6 +975,8 @@
         }
     }
  }
+
+    
 }
 
 @media screen and (max-width: 320px) {

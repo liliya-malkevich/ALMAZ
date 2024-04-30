@@ -153,6 +153,21 @@ button {
     .text-green();
 }
 
+label.error {
+    width: 295px;
+    color: red;
+}
+
+input.error {
+border-bottom: 1px solid red !important;
+}
+
+.error-abs {
+    bottom: -25px;
+    left: 0;
+    position: absolute;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -177,6 +192,7 @@ button {
 body {
     background-color: #afaa98;
     font-family: "PlayRegular", sans-serif;
+    position: relative;
 }
 
 ul {
@@ -942,7 +958,7 @@ main {
     }
 }
 
-.count-popup {
+.popup-main {
     display: none;
     width: 100%;
     height: 100%;
@@ -951,15 +967,22 @@ main {
     left: 0;
     background-color: #81816eeb;
     z-index: 999;
+    padding: 0 10px;
+    background-image: url(../../assets/img/our/wallpapers.png);
+}
+
+.count-popup {
+    .popup-main();
     .count-container {
         max-width: 930px;
         margin: 0 auto;
         padding-top: 105px;
         position: relative;
-        .close {
+        .close-popup {
             position: absolute;
             right: 0px;
             cursor: pointer;
+            top: 70px;
         }
         .count-header {
             display: flex;
@@ -1045,6 +1068,12 @@ main {
                     display: flex;
                     align-items: center;
                     gap: 22px;
+                    position: relative;
+                    label {
+                        &.error {
+                            .error-abs();
+                        }
+                    }
                     .sq-radio {
                         display: block;
                         position: relative;
@@ -1126,13 +1155,21 @@ main {
                         background-image: url(../../assets/img/popup/next-svg.svg);
                         transform: rotate(90deg);
                     }
+                    label {
+                        &.error {
+                            .error-abs();
+                        }
+                    }
                 }
+
+
 
             }
             .right-form {
                 display: flex;
                 flex-direction: column;
                 gap: 35px;
+
                 input {
                     .popup-input();
                     &::placeholder {
@@ -1147,6 +1184,88 @@ main {
                     background-color: @dark2-green-color;
                     border: none;
                     width: 410px;
+                    height: 50px;
+                    .text-light-mid();
+                }
+            }
+        }
+        .message {
+            display: none;
+            text-align: center;
+            color: white;
+            font-size: calc(35px + 0.938vw);
+        }
+    }
+}
+
+.price-popup {
+    .popup-main();
+    .price-container {
+        max-width: 570px;
+        margin: 0 auto;
+        padding-top: 125px;
+        position: relative;
+        .close-popup {
+            position: absolute;
+            right: 0px;
+            cursor: pointer;
+            top: 70px;
+        }
+        .price-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            h2{
+                .text-orani-big();
+                font-size: 35px;
+                letter-spacing: 1px;
+                color: @white-color;
+            }
+            .desc {
+                max-width: 400px;
+                .text-light-mid();
+                line-height: 19px;
+                margin-bottom: 60px;
+                align-self: center;
+                text-align: center;
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            .standart-input {
+                .popup-input();
+                &::placeholder {
+                    .popup-plholder();
+                }
+            }
+            .wish {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 40px;
+                .message {
+                    display: none
+                }
+                input {
+                    .popup-input();
+                    &::placeholder {
+                        .popup-plholder();
+                   
+                    }
+                    .text-green();
+                    width: 305px;
+                    padding: 25px 0px 180px 20px;
+            
+                }
+                .send-price {
+                    background-color: @dark2-green-color;
+                    border: none;
+                    width: 305px;
                     height: 50px;
                     .text-light-mid();
                 }
